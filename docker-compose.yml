@@ -1,0 +1,8 @@
+version: '3'
+services:
+  anacondaservice:
+    build: ./anaconda-service
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./anaconda-service/projects:/opt/notebooks
